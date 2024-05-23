@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewarded Ad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #ad-container {
+            width: 300px;
+            height: 250px;
+            margin: 20px auto;
+        }
+    </style>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script>
+    <script>
+        function loadRewardedAd() {
+            const adContainer = document.getElementById('ad-container');
+            const adScript = document.createElement('script');
+            adScript.src = "https://your-ad-network.com/your-ad-script.js"; // Replace with your actual ad script URL
+            adContainer.appendChild(adScript);
+        }
+        window.onload = loadRewardedAd;
+    </script>
+</head>
+<body>
+    <h2>Watch an Ad to Earn Rewards</h2>
+    <div id="ad-container">
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:250px"
+             data-ad-client="ca-app-pub-8244447418648514~2646964503"
+             data-ad-slot="8244447418648514~2646964503"></ins>
+    </div>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
